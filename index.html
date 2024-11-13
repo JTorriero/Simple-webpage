@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello Button</title>
+</head>
+<body>
+    <h1 id="greeting">Hello!</h1>
+    <button onclick="changeGreeting('Hello')">Say Hello</button>
+    <button onclick="changeGreeting('Hi')">Say Hi</button>
+
+    <script>
+        function changeGreeting(greeting) {
+            document.getElementById('greeting').innerText = greeting;
+        }
+    </script>
+</body>
+</html>
